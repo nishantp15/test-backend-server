@@ -6,7 +6,7 @@ const {productModel} = require('../Models/productModel')
 productRouter.get('/',async (req, res)=>{
     try{
         const productData = await productModel.find({});
-        res.status(200).json(productData);
+        res.status(200).json({data: productData});
     }catch(err){
         console.log(err)
         res.status(500).send(err.message)
@@ -17,7 +17,7 @@ productRouter.get('/',async (req, res)=>{
         const id = req.params.id;
         try{
             const productData = await productModel.findById({_id:id});
-            res.status(200).json(productData);
+            res.status(200).json({data:productData});
         }catch(err){
             console.log(err)
             res.status(500).send(err)
