@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Apple",
+      "AvlQty": 1,
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "AvlQty": 2,
+      "price": 120
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "AvlQty": 4,
+      "price": 100
+    },
+    {
+      "name": "Orange",
+      "AvlQty": 5,
+      "price": "100",
+      "id": 4
+    },
+    {
+      "name": "Mango",
+      "AvlQty": "5",
+      "price": "120",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "name": "Apple",
+      "AvlQty": 2,
+      "price": 120,
+      "qty": 1
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "AvlQty": 4,
+      "price": 100,
+      "qty": 3
+    },
+    {
+      "id": 1,
+      "name": "Apple",
+      "AvlQty": 1,
+      "price": 100,
+      "qty": 1
+    }
+  ]
+}
