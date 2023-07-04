@@ -5,7 +5,9 @@ const productSchema = mongoose.Schema({
     price:Number,
     AvlQty:Number,
     unit:String
-})
+},
+{ timestamps: true }
+)
 
 const productModel = mongoose.model('product', productSchema);
 

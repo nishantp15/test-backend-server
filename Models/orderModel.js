@@ -9,7 +9,8 @@ const orderHistorySchema = mongoose.Schema({
         name:String
     },
     orderHistory:[{id:mongoose.Types.ObjectId,name:String,qty:Number}]
-})
+},
+{ timestamps: true })
 
 const orderHistoryModel = mongoose.model('orderHistory', orderHistorySchema);
 
