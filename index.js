@@ -14,7 +14,7 @@ app.use(logrequest);
 
 app.use('/products',productRouter);
 app.use('/user',userRouter);
-app.use('/orderhistory',orderHistoryRouter);
+app.use('/orderhistories',orderHistoryRouter);
 
 
 function logrequest(req, res, next){
