@@ -13,6 +13,18 @@ orderHistoryRouter.get('/',async (req, res)=>{
     }
 })
 
+orderHistoryRouter.get('/:id',async (req, res)=>{
+    let data = req.body;
+    let id = req.params.id;
+    try{
+        const orderHistoryData = await orderHistoryModel.findById(id);
+        res.status(200).json(orderHistoryData);
+    }catch(err){
+        console.log(err)
+        res.status(500).send(err.message)
+    }
+})
+
 
 
 orderHistoryRouter.post('/',async (req, res)=>{
